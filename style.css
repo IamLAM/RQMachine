@@ -24,3 +24,15 @@ body {
     width: 500px;
     height: auto;
 }
+
+#text {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#author {
+    color: black;
+    padding: 5px;
+    text-align: left;
+}
