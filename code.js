@@ -11,7 +11,7 @@
       );
 */
 $('body').css('background-color', '#FF4000');
-$('text').css('background-color', '#FF4000');
+$('#title').css('color', '#FF4000');
 
 }
 
