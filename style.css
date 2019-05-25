@@ -23,6 +23,7 @@ body {
     border-radius: 10px;
     width: 500px;
     height: auto;
+    padding: 10px;
 }
 
 #text {
@@ -35,4 +36,23 @@ body {
     color: black;
     padding: 5px;
     text-align: left;
+}
+
+#tweet-quote {
+    color: #00A676;
+    float: left;
+}
+
+#new-quote {
+    background-color: #00A676;
+    color: white;
+    float: right;
+    border-color: #00A676;
+    border-radius: 10px;
+}
+
+.configButton {
+    display: block;
+    margin: auto;
+    width: 400px;
 }
