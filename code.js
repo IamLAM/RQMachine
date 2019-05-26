@@ -10,8 +10,8 @@
         1000
       );
 */
-let color=['#06AED5','#086788','#F0C808','#DD1C1A','#5D584C'];
-let randomColor=Math.floor(Math.random()*4+1);
+let color=['#06AED5','#086788','#F0C808','#DD1C1A','#5D584C','#B3DD1A','#870CCE'];
+let randomColor=Math.floor(Math.random()*6+1);
 console.log(randomColor);
 
 $('body').css('background-color', color[randomColor]);
