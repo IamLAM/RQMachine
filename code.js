@@ -40,11 +40,8 @@ $("#author").html(getQuotes.quotes[randomQuote].author);
 
 
 function tweetQuote(){
-//var tweetLink=document.getElementById("#tweet-quote");
-var twitter="https://twitter.com/intent/tweet?text="+currentQuote+"["+currentAuthor+"]";
-console.log(twitter);
-$("#tweet-quote").attr("href",twitter);
 
+window.open("https://twitter.com/intent/tweet?text=" + $("#text").html());
 }
  
  $(document).ready(function() {
