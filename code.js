@@ -23,16 +23,8 @@ var getQuotes={
 
 
 
- function changeColor(){
+ function changeQuote(){
     console.log("entro");
-  /*  $("html body").animate(
-        {
-          backgroundColor: 'red',
-          color: 'white'
-        },
-        1000
-      );
-*/
 let color=['#06AED5','#086788','#F0C808','#DD1C1A','#5D584C','#B3DD1A','#870CCE'];
 let randomColor=Math.floor(Math.random()*6+1);
 let randomQuote=Math.floor(Math.random()*10+1);
@@ -47,8 +39,16 @@ $("#author").html(getQuotes.quotes[randomQuote].author);
 }
 
 
+function tweetQuote(){
+//var tweetLink=document.getElementById("#tweet-quote");
+var twitter="https://twitter.com/intent/tweet?text="+currentQuote+"["+currentAuthor+"]";
+console.log(twitter);
+$("#tweet-quote").attr("href",twitter);
+
+}
  
  $(document).ready(function() {
   //  console.log("entro");
-  $('#new-quote').on('click', changeColor);
+  $('#new-quote').on('click', changeQuote);
+  $('#tweet-quote').on('click',tweetQuote);
   }); 
