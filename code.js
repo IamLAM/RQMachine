@@ -40,7 +40,7 @@ console.log(randomQuote);
 $('body').css('background-color', color[randomColor]);
 $('#title').css('color', color[randomColor]);
 $("#text").html(getQuotes.quotes[randomQuote].quote);
-
+$("#author").html(getQuotes.quotes[randomQuote].author);
 }
 
 
