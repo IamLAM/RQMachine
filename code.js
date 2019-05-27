@@ -1,4 +1,5 @@
-
+var currentQuote;
+var currentAuthor;
  
 var getQuotes={
   "quotes": [
@@ -21,6 +22,7 @@ var getQuotes={
 };
 
 
+
  function changeColor(){
     console.log("entro");
   /*  $("html body").animate(
@@ -36,7 +38,8 @@ let randomColor=Math.floor(Math.random()*6+1);
 let randomQuote=Math.floor(Math.random()*10+1);
 console.log(randomColor);
 console.log(randomQuote);
-
+currentQuote=getQuotes.quotes[randomQuote].quote;
+currentAuthor=getQuotes.quotes[randomQuote].author;
 $('body').css('background-color', color[randomColor]);
 $('#title').css('color', color[randomColor]);
 $("#text").html(getQuotes.quotes[randomQuote].quote);
